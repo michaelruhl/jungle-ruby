@@ -1,0 +1,11 @@
+<%if product = Product.find_by(id: product_id)%>
+<div>
+<div>
+<%= image_tag product.image.tiny.url %>
+ <div>
+        <h3><%= product.name %></h3>
+        <p><%= humanized_money_with_symbol line_total %></p>
+      </div>
+</div>
+</div>
+<%end%>

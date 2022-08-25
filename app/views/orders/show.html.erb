@@ -6,8 +6,12 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+          <% line_items = LineItem.where(order_id: @order.id) %>
+<% line_items.each do |line_item| %>
+        <%= render 'line_items', product_id: line_item.product_id, line_total: line_item.total_price %>
+        <%end%>
   </div>
-
+  <div>kvirani@gmail.com</div>
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
