@@ -29,3 +29,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Cypress Tests 
+
+run in test environment -->> bin/rails s -b 0.0.0.0 -e test
