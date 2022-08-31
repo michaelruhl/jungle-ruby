@@ -1,6 +1,6 @@
 // const { first } = require("cypress/types/lodash");
 
-describe('example to-do app', () => {
+describe('jungle ruby app', () => {
     beforeEach(() => {
       cy.visit('http://localhost:3000')
       
